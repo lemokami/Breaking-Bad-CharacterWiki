@@ -10,11 +10,11 @@ export default function Home({ characters }) {
           name='description'
           content='A list of the characters that acted in Breaking Bad. Uses Breaking Bad API'
         />
-        <title>Breaking Bad Charater List</title>
+        <title>Breaking Bad Character List</title>
       </Head>
-      <div className='grid grid-cols-1 md:grid-cols-4 justify-items-center'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center'>
         {characters.map((character) => (
-          <Card character={character} key={character.id} />
+          <Card character={character} key={character.char_id} />
         ))}
       </div>
     </>

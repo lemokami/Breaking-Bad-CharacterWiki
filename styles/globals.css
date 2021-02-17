@@ -9,3 +9,7 @@
 .btn-outline {
   @apply border border-green-500 text-green-500 hover:bg-green-500 focus:outline-none hover:text-white transition-colors;
 }
+
+.btn-filled {
+  @apply text-white bg-green-500 focus:outline-none;
+}

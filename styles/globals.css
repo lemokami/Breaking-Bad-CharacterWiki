@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 .card {
-  @apply bg-gray-50 rounded-xl m-6 flex flex-col items-center shadow-xl;
+  @apply bg-gray-50 rounded-xl  flex flex-col items-center shadow-xl;
+}
+
+.btn-outline {
+  @apply border border-green-500 text-green-500 hover:bg-green-500 focus:outline-none hover:text-white transition-colors;
 }

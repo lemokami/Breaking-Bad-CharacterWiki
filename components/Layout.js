@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Layout = ({ children }) => {
   return (
-    <div className='bg-green-600 min-h-screen'>
+    <div className='bg-gradient-to-br from-green-800 to-green-500 min-h-screen'>
       <nav className='flex justify-around md:justify-between py-6 container mx-auto items-center'>
         <h1 className='font-bold text-3xl text-gray-50'>
           Breaking Bad Charater List

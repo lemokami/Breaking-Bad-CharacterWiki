@@ -6,6 +6,10 @@ export default function Home({ characters }) {
   return (
     <>
       <Head>
+        <meta
+          name='description'
+          content='A list of the characters that acted in Breaking Bad. Uses Breaking Bad API'
+        />
         <title>Breaking Bad Charater List</title>
       </Head>
       <div className='grid grid-cols-1 md:grid-cols-4 justify-items-center'>

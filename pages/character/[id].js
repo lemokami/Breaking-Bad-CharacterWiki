@@ -55,12 +55,12 @@ export default function CharacterPage() {
   return (
     <div className='card flex flex-col md:flex-row overflow-hidden p-6 w-96 md:w-auto mx-auto'>
       {loading ? (
-        <div className='animate-pulse w-64 h-96 rounded bg-gray-300'></div>
+        <div className='animate-pulse w-full md:w-64 h-96 rounded bg-gray-300'></div>
       ) : (
         <img
           src={character.img}
           alt={`${character.name}-Breaking bad`}
-          className='w-64  rounded'
+          className='w-full md:w-64  rounded'
         />
       )}
       <div className='mx-auto my-3 md:my-auto md:ml-6 bg-gray-100 w-full h-full p-6 rounded'>
@@ -117,22 +117,3 @@ export default function CharacterPage() {
     </div>
   );
 }
-
-// export async function getServerSideProps(context) {
-//   const { id } = context.params;
-//   const res_1 = await fetch(`https://breakingbadapi.com/api/characters/${id}`);
-//   const data = await res_1.json();
-
-//   let queryName = data[0].name.split(' ').join('+');
-//   const res_2 = await fetch(
-//     `https://breakingbadapi.com/api/quote?author=${queryName}`
-//   );
-//   const quotes = await res_2.json();
-
-//   return {
-//     props: {
-//       character: data[0],
-//       quotes: quotes.slice(0, 3),
-//     },
-//   };
-// }

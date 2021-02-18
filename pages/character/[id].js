@@ -31,7 +31,6 @@ export default function CharacterPage() {
   const [quotes, setQuotes] = useState([]);
   const [loading, setLoading] = useState(true);
   const router = useRouter();
-
   useEffect(async () => {
     const { id } = router.query;
     const res_1 = await fetch(
@@ -50,7 +49,7 @@ export default function CharacterPage() {
     setTimeout(() => {
       setLoading(false);
     }, 500);
-  }, []);
+  }, [router.query]);
 
   return (
     <div className='card flex flex-col md:flex-row overflow-hidden p-6 w-96 md:w-auto mx-auto'>
